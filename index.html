@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf</title>
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Global Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,426;1,400&family=Poppins:ital,wght@0,300;0,500;0,600;1,600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1>My<br>Bookshelf</h1>
+
+    <div class="book-form-container">
+        <input type="text" placeholder="Judul Buku" id="title">
+        <input type="text" placeholder="Penulis" id="author">
+        <input type="number" placeholder="Tahun" id="year">
+        <label for="isComplete">
+            <input type="checkbox" id="isComplete"> Selesai Dibaca
+        </label>
+        <button id="addBook"><i class="fa-solid fa-plus"></i></button>
+    </div>
+
+    <div class="search-container">
+        <input type="text" placeholder="Cari Buku" id="search">
+    </div>
+    
+
+    <div class="bookshelves">
+        <div class="bookshelf" id="unfinished">
+            <h2>Belum Selesai Dibaca</h2>
+            <ul id="unfinishedList" class="book-list"></ul>
+        </div>
+        <div class="bookshelf" id="finished">
+            <h2>Selesai Dibaca</h2>
+            <ul id="finishedList" class="book-list"></ul>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
